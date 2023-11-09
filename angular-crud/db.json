@@ -1,0 +1,32 @@
+{
+  "studentList": [
+    {
+      "sname": "Vai",
+      "dob": "2023-10-09T18:30:00.000Z",
+      "sbranch": "cse",
+      "syear": "Second",
+      "sid": 115,
+      "data": "Reading",
+      "id": 1
+    },
+    {
+      "sname": "Chris",
+      "dob": "2023-10-13T18:30:00.000Z",
+      "sbranch": "ise",
+      "syear": "Pre-final",
+      "sid": 456,
+      "data": "Cook",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

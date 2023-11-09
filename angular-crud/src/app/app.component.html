@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>supervised_user_circle</mat-icon>
+  </button>
+  <span style="margin-right: 30px;">Angular CRUD using Material UI</span>
+  <a mat-button class="active" routerLink="/home">Home</a>
+  <a mat-button routerLink="/about">About</a>
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="warn" (click)="openLogin()" style="margin: 30px;">Login</button>
+  <button mat-raised-button color="warn" (click)="openDialog()" [disabled]="!isEmailRight">Add Student</button>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
