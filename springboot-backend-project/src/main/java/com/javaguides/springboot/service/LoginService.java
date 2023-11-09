@@ -24,9 +24,10 @@ public class LoginService {
             if (storedLogin.get().getEmail().equals(login.getEmail()) && storedLogin.get().getPassword().equals(login.getPassword())) {
                 return true; 
             }
+            
         }
-
-        return false;
+		return false;
+        
 
 	}
 }

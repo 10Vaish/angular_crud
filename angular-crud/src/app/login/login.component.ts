@@ -34,21 +34,21 @@ export class LoginComponent {
 
     const data = { email: this.email, password: this.password };
     this.api.loginValidate(data).subscribe((res)=>{
-      if(res.message=='Login successful'){
+      if(res.message==='Login successful'){
         this.snackBar.open('Login successful!', 'Close', {
           duration: 2000, 
         });
         this.isEmailRight=true;
         this.dialogRef.close('login');
       }else{
-        
-        
         this.snackBar.open('Invalid email or password', 'Close', {
           duration: 2000, });
       }
       
     },
     (error)=>{
+      this.snackBar.open('Invalid email or password', 'Close', {
+        duration: 2000, });
       console.log(error);
       
     }
